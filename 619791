@@ -1,9 +1,9 @@
 #include<stdio.h>
 #include<conio.h>
-#include<time.h>                                                       //*Group Members*//
-int main()                                                            //1.Shan Ali Roll no# 48//         
-{                                                                    //2.Siraj khoso Roll n0# 50//
-                                                                    //3. kanwal Mallah Roll no# 58//
+#include<time.h>                                                       
+int main()                                                                
+{                                                                    //2.Siraj khoso Roll n
+                                                                    
                                                                            //PIN==1461//
  time_t t=time(NULL);                         
  struct tm*tm=localtime(&t);
