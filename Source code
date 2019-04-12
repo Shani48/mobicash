@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include<conio.h>
 #include<time.h>                                                       
-int main()                                                                
-{                                                                    //2.Siraj khoso Roll n
+int main()                                                 
+{                                                                    
                                                                     
                                                                            //PIN==1461//
  time_t t=time(NULL);                         
