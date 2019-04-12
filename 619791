@@ -1,0 +1,275 @@
+#include<stdio.h>
+#include<conio.h>
+#include<time.h>                                                       //*Group Members*//
+int main()                                                            //1.Shan Ali Roll no# 48//         
+{                                                                    //2.Siraj khoso Roll n0# 50//
+                                                                    //3. kanwal Mallah Roll no# 58//
+                                                                           //PIN==1461//
+ time_t t=time(NULL);                         
+ struct tm*tm=localtime(&t);
+	int choice,num,bill,id,gasid;
+	int cnic,amount,pin,ac;
+	int total=30000;
+	start:
+	system(" COLOR b");
+	printf("\n\t\t\t**************WELCOME TO MOBICASH ACCOUNT**************\n\n\n");
+	printf("1:Send Money  \t\t\t\t 2:Pay Bills  \t\t\t\t 3:Mobile Load  \t\t\t\n4:Quick Pay \t\t\t\t 5:My Account \t\t\t\t 6:invite a friend\n\n7:Rs 100 Jazz Load  \t\t\t 8:Help\n");
+	printf("\n\nENTER YOUR CHOICE\n");
+	scanf("%d",&choice);
+	switch (choice)
+	{
+		case 1:
+
+		printf("    \t\t\t\t1:To Mobile Account\n \t\t\t\t2:To CNIC\n\t\t\t\t0: To go back\n");
+		scanf("%d",&choice);
+		switch(choice)
+		{
+			case 1:
+		printf("\nEnter Your account number\n");
+		scanf("%d",&num);
+		printf("\nHow much trancation do you want?\n");
+		scanf("%d",&choice);
+		printf("\nPlease enter your Pin\n");
+		scanf("%d",&pin);
+		if(pin==1461)
+		printf("DONE!\nThanks for using our services\n",total-num);
+		else
+		printf("\nYour Pin is incorrect");
+		break;
+		     case 2:
+		     	printf("\nEnter Reciver CNIC (13 digits only):\n");      //CNIC=4520840546587//
+		     	scanf("%d",&cnic);
+		     	printf("\nEnter reciver number:\n");
+		     	scanf("%d",&num);
+		     	printf("Enter amount:\n");
+		     	scanf("%d",&amount);
+		     	printf("Please enter your Pin:\n");
+		     	scanf("%d",&pin);
+		     	if(pin==1461)
+		     	printf("\nYou will recive transation detail through sms\n Thanks for using Mobicash\n",total-amount);
+		     	else
+		     	printf("Your Pin is incorrect");
+				 
+				break;
+				case 0:
+					goto start;
+		}
+		break;
+		case 2:
+			printf("\t\t\t\t 1.Electricity\n\t\t\t\t 2.Gas\n \t\t\t\t 0.Go Back ");
+			scanf("%d",&choice);
+	    	switch(choice)
+		{
+			case 1:
+				printf("\nEnter your 8 digits bill I.d\n");
+				scanf("%d",&bill);
+				printf("\nyour bill of march month is 4500\nFor paying it through mobicash account \n\nEnter your Pin\n");
+				scanf("%d",&pin);
+				if(pin==1461)
+				printf("\nYou have pay your bill electricity of K-ELECTRIC through Mobicash account bill paying details you will get through sms\n Thanks for using our Service\n",total-4500);
+				else
+				printf("\nYour Pin is Wrong\n");
+				break;
+				case 2:
+					printf("\n1.SSGC\n");
+					scanf("%d",&id);
+					if(id==1)
+					printf("\nEnter cousumer Reference number\n");
+					scanf("%d",&gasid);
+					printf("\nYou bill of  SSGC of March month is R.s 300.0\n For paying it through mobicash account \nEnter your Pin\n ");
+					scanf("%d",&pin);
+					if(pin==1461)
+						printf("\nYou have pay your SSGC bill through Mobicash account bill paying details you will get through sms\n Thanks for using our Service\n",total-300);
+				else
+				printf("\nYour PIN is wrong\n");
+				break;
+				case 0:
+					goto start;
+				}
+				break;
+				case 3:
+					printf(" \t\t\t\t 1:Jazz&Warid\n \t\t\t\t 2:Telenor\n \t\t\t\t 3:Zong\n \t\t\t\t 4:Ufone\n \t\t\t\t 0:Go Back \n");
+                	scanf("%d",&choice);
+                	switch(choice)
+                	{
+                		case 1:
+                			printf("\nMobilink&Warid Load\n");
+                        	printf("\nPlease enter your number\n");
+                         	scanf("%d",&num);
+                        	printf("\nHow much balance do you want to load\n");
+                        	scanf("%d",&amount);
+                        	printf("\nPlease Enter your Pin\n");
+                        	scanf("%d",&pin);
+                        	if(pin==1461)
+		                    printf("\nDONE!\n \n\tThansk for using our services\n",total-amount);
+		                    else
+		                    printf("\nYour Pin is Wrong\n");
+		                    printf("%s",asctime(tm));
+							break;
+		                    case 2:
+		                    	printf("\nTelenor Load\n");
+                        	    printf("\nPlease enter your number\n");
+                         	    scanf("%d",&num);
+                        	    printf("\nHow much balance do you want to load\n");
+                        	    scanf("%d",&amount);
+                        	    printf("\nPlease Enter your Pin\n");
+                        	    scanf("%d",&pin);
+                        	if(pin==1461)
+		                        printf("\nDONE!\n \n\t Thansk for using our services\n",total-amount);
+		                    else
+		                        printf("\nYour Pin is Wrong\n");
+		                        printf("%s",asctime(tm));
+		                    break;
+		                    case 3:
+		                    	printf("\nZong Load\n");
+                        	printf("\nPlease enter your number\n");
+                         	scanf("%d",&num);
+                        	printf("\nHow much balance do you want to load\n");
+                        	scanf("%d",&amount);
+                        	printf("\nPlease Enter your Pin\n");
+                        	scanf("%d",&pin);
+                        	if(pin==1461)
+		                    printf("\nDONE!\n \n\tThansk for using our services\n",total-amount);
+		                    else
+		                    printf("\nYour Pin is Wrong\n");
+		                    printf("%s",asctime(tm));
+							break;
+		                    case 4:
+		                    	printf("\nUfone Load\n");
+                        	printf("\nPlease enter your number\n");
+                         	scanf("%d",&num);
+                        	printf("\nHow much balance do you want to load\n");
+                        	scanf("%d",&amount);
+                        	printf("\nPlease Enter your Pin\n");
+                        	scanf("%d",&pin);
+                        	if(pin==1461)
+		                    printf("\nDONE!\n\tThansk for using our services\n",total-amount);
+		                    else
+		                    printf("\nYour Pin is Wrong\n");
+		                    printf("%s",asctime(tm));
+							break;
+							case 0:
+								goto start;
+		                    }
+		                    break;
+		    case 4:
+		    	printf("\n1.Quick pay\n 0:Go back\n");
+		    	scanf("%d",&choice);
+		    	switch(choice)
+		    	{
+		    		case 1:
+		    	printf("\nEnter 8 digits QuickPay ID..             \n");
+		        scanf("%d/n",&num);
+		        printf("\n\t*Thanks for using our service but sorry system is busy now*\n");
+	            printf("%s",asctime(tm));
+				break;
+				case 0:
+					goto start;
+	    }
+	    break;
+			case 5:
+	        	printf("\n\t\t\t\t 1.Check Balance\n\t\t\t\t 2:Mini Statement\n\t\t\t\t 3:update Email\n\t\t\t\t 0.Go Back\n");
+	        	scanf("%d",&choice);
+				switch (choice)
+				{
+					case 1:
+						printf("%d",total);
+						break;
+					case 2:
+						printf("\nEnter 4 didgit pin\n");
+						scanf("%d",&pin);
+						if(pin==1461)
+						 printf("\nSOrry! system is busy now try later\n");
+						 else
+						 printf("\nWrong Pin\n");
+						 break;
+					case 3:
+					printf("\nvisit our offical website http://www.monilink.com/mobicash/email account\n");
+					break;	 
+					case 0:
+						goto start;
+				
+				 } 
+	        	
+	        	break;
+	        case 6:
+                printf("\n\t\t\t1.invite your friend\n \t\t\t0.Go Back\n");
+                scanf("%d",&choice);
+		    	switch(choice)
+		    	{
+		    		case 1:
+	        	printf("\nPlease enter friend's jazz or Warid number (03xxxxxx)\n");
+	        	scanf("%d",&choice);
+                printf("\nAgr aap ke dost  ne 7026 se iay SMS per\n Aaj raat 12 baje tak 1 likh ker reply ker k\n JazzCash Mobile Account khola tu aap ko 20 rupy milen ge\n");
+                printf("%s",asctime(tm));
+				break;
+				case 0:
+					goto start;
+					break;
+			}
+			break;
+            case 7:
+            	printf("\n\t\t\t1.Jazz 100 load\n 0.Go Back\n");
+            	scanf("%d",&choice);
+		    	switch(choice)
+		    	{
+		    		case 1:
+            	 printf("\nEnter Jazz number (11 digits):\n");
+                 scanf("%d",&num);
+                 printf("\nYou are buying Mobile Load of Rs 100.00 for Mobile prepaid No:Fee: Rs 0.00. Enter MPIN to confirm.\n");
+                 scanf("%d",&pin);
+                 if(pin==1461)
+                 printf("Done! \n\tThanks for services\n",total-100);
+                 else
+                 printf("\nYour Pin is Wrong\n");
+                 printf("%s",asctime(tm));
+                 break;
+                 case 0:
+              	      goto start;
+              	      break;
+                
+            }
+                break;
+        case 8:
+            	printf("\t\t\t\t 1:Nearby Agent\n \t\t\t\t 2:How to add Balance\n \t\t\t\t 3:Forgot MPIN\n \t\t\t\t 4:Increase Account Limit\n \t\t\t\t 5:Get Mobile Application\n \t\t\t\t 6:Get QuickPay Services\n \t\t\t\t 7:Schedule of Charges\n \t\t\t\t 0:Go Back\n");
+               scanf("%d",&choice);
+                switch (choice)
+                {
+	             case 1:
+	        	printf("\nDear coustomer,your nearby JazzCash shop is :\nZuber Pco\nQazi Ahmed Road Near Stadium Nawabshah\n(03063030178)");
+	        	printf("%s",asctime(tm));
+				break;
+	        case 2:
+	        	printf("\nDeposit cash is free of cost at any JazzCash agent or transfer money from any bank account to your \njazz cash mobile account instantly.for more detail just dial\n4444 or vist our offical website:http://www.mobilink.com/mobicash");
+	        	printf("%s",asctime(tm));
+				break;
+	        case 3:
+	        	printf("\nDear Customer, if you have forgotten your MPIN,you can get your\n MPIN reset by calling helpline: 4444. More details send via sms\n");
+	        	printf("%s",asctime(tm));
+				break;
+	        case 4:
+	        	printf("\nDear Coustomer, increase your limit to Rs 80,000/ month via biometric verification at jazzcash agent.\n increase limit to Rs 50,000 / month by just calling help line 4444\n");
+	        	printf("%s",asctime(tm));
+				break;
+	        case 5:
+			    printf("\nDear Costomer, link to download JazzCash Mobile Application has\nbeen sent to you via SMS. Thank you for using Jazzcash\n");
+				printf("%s",asctime(tm));
+				break;	
+			case 6:
+		    	printf("\nQuickPay is a fast&free of cost payment service that work via\nQuickPay or QR or 8 digit QuickPay ID.Follow instructions sent via\nSMS to get this service linked with your Account\n");
+		    	printf("%s",asctime(tm));
+				break;
+			case 7:
+			    printf("\nDear Costomer, website link displying Schedule of charges for all\nMobile Account transcation has been sent to you via sms\n");
+				printf("%s",asctime(tm));
+				break;
+			case 0:
+			goto start;
+			break;			
+
+}
+
+            }
+				getchar();
+	            return 0;
+				}
